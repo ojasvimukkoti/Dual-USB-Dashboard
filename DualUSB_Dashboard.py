@@ -195,6 +195,9 @@ def FirstPassYield_GRAPH(range_date_list, range_names):
                           xaxis_title='Test Result', yaxis_title='Count',
                           barmode='group')
     return fig_FPY
+
+st.info("This is a sample of what the dashboard looks like. The official one uses local files to get data.")
+
 #STREAMLIT CODE STARTS HERE
 selected_year = st.selectbox("Select a Year", ('2020','2022','2023'), key='selectbox')
 st.write(f'You selected year: {selected_year}')
@@ -232,8 +235,6 @@ if data is not None:
     fail_percentage = (fail_count/total_result_count)*100
     #creating dataframe for the pass/fail %'s
     passFail_df = pd.DataFrame({'Test Result': ['PASSED', 'FAILED'], 'Count':[pass_count, fail_count]})
-
-    st.info("This is a sample of what the dashboard looks like. The official one uses local files to get data.")
     
     #start of the streamlit creation
     st.title(f"Dual USB ATP Data Visualization Dashboard For {selected_year}")
