@@ -233,6 +233,8 @@ if data is not None:
     #creating dataframe for the pass/fail %'s
     passFail_df = pd.DataFrame({'Test Result': ['PASSED', 'FAILED'], 'Count':[pass_count, fail_count]})
 
+    st.info("This is a sample of what the dashboard looks like. The official one uses local files to get data.")
+    
     #start of the streamlit creation
     st.title(f"Dual USB ATP Data Visualization Dashboard For {selected_year}")
 
