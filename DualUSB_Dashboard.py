@@ -199,7 +199,7 @@ def FirstPassYield_GRAPH(range_date_list, range_names):
 st.info("This is a sample of what the dashboard looks like. The official one uses local files to get data.")
 
 #STREAMLIT CODE STARTS HERE
-selected_year = st.selectbox("Select a Year", ('2020','2022','2023'), key='selectbox')
+selected_year = st.selectbox("Select a Year", ('2023','2022','2020'), key='selectbox')
 st.write(f'You selected year: {selected_year}')
 #checking if selected year is current use is different than current slected year
 if st.session_state.selectbox != selected_year:
