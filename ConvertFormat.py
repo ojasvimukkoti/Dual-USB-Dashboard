@@ -201,7 +201,6 @@ class ConvertFormat:
             print(f"Error processing file {filename}: {e}. Skipping this file...")
 
 # Example usage
-# directory_path = r'P:\PANASONIC DUAL USB\Reports\300-399'
 directory_path = "Directory Path Name"
 
 UNC_ = "{UNC_path_of_Network}"
